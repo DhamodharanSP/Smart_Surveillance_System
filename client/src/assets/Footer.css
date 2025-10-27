@@ -1,0 +1,20 @@
+/* Footer Styles */
+.custom-footer {
+    background-color: #343a40;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+  }
+  
+  .footer-text strong {
+    font-weight: bold;
+  }
+  
+  .custom-footer .container {
+    text-align: center;
+  }
+  

@@ -1,0 +1,100 @@
+/* General Page Styling */
+.analytics-page {
+  padding: 30px;
+  background-color: #f8f9fa; /* Light background */
+  color: #1e3a8a; /* Deep blue text */
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1e3a8a; /* Deep blue */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #1e3a8a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Analytics Section */
+.analytics-section {
+  background-color: #ffffff; /* White card */
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.analytics-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Title */
+.analytics-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e3a8a; /* Deep blue */
+  margin-bottom: 15px;
+}
+
+/* Download Button */
+.download-pdf-button {
+  background-color: #1e3a8a; /* Deep blue */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.download-pdf-button:hover {
+  background-color: #133b7a; /* Darker blue */
+}
+
+/* Chart Styling */
+.recharts-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 28px;
+  }
+
+  .analytics-section {
+    padding: 15px;
+  }
+
+  .analytics-section h2 {
+    font-size: 20px;
+  }
+
+  .download-pdf-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .analytics-section {
+    padding: 10px;
+  }
+
+  .download-pdf-button {
+    width: 100%;
+  }
+}

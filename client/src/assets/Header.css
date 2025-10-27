@@ -1,0 +1,95 @@
+/* Header Styles */
+.custom-header {
+  background-color: #b3d9ff; /* Pale blue crystal-like background */
+  color: white; /* White text color */
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slide-in 1s ease-out;
+}
+
+.custom-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fade-in 2s;
+}
+
+.company-logo {
+  height: 120px; /* Enlarged the logo */
+  border-radius: 12px;
+  animation: pop-in 1s ease-out;
+}
+
+.company-name {
+  color: #1a1a40; /* Darker shade of blue for contrast */
+  font-family: "Poppins", sans-serif; /* Stylish font */
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fade-in 2s;
+}
+
+/* Search Bar Styles (Placeholder for future use) */
+.search-bar input {
+  max-width: 300px;
+  border-radius: 30px;
+  padding: 10px 15px;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: background 0.3s, border 0.3s;
+}
+
+.search-bar input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: white;
+  outline: none;
+}
+
+.search-bar button {
+  background: white;
+  color: #1a1a40; /* Matching with the company name color */
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.search-bar button:hover {
+  transform: scale(1.1);
+  background: #e6f3ff; /* Lighter shade for hover effect */
+}
+
+/* Animations */
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

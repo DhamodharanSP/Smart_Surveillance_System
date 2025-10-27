@@ -1,0 +1,69 @@
+.home-container {
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    padding: 60px;
+    border-radius: 15px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background: #f4a261;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #e76f51;
+  }
+  
+  .features, .how-it-works, .impact {
+    margin-top: 50px;
+  }
+  
+  .features-grid, .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature-card, .step {
+    background: #264653;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .feature-card:hover, .step:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-card span, .step span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .impact {
+    background: #2a9d8f;
+    padding: 30px;
+    border-radius: 10px;
+  }

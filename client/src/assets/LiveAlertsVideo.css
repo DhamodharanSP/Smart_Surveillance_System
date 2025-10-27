@@ -1,0 +1,108 @@
+/* LiveAlerts.css */
+
+/* Main Container */
+.alerts-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Heading */
+  .alerts-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d90429; /* Red for alerts */
+    margin-bottom: 20px;
+  }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Alert Card */
+  .alert-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .alert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Video Section */
+  .video-section {
+    flex: 1;
+    padding-right: 15px;
+  }
+  
+  .video-section video {
+    border-radius: 8px;
+  }
+  
+  .location-timing {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  /* Suspect Section */
+  .suspect-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .suspect-photo-frame {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #d90429;
+    margin-right: 15px;
+  }
+  
+  .suspect-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .suspect-info {
+    text-align: left;
+  }
+  
+  .suspect-info p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .suspect-info strong {
+    color: #d90429;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .alert-card {
+      flex-direction: column;
+    }
+  }
+  
+  

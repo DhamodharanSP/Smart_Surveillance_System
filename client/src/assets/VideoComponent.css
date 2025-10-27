@@ -1,0 +1,91 @@
+/* General Page Styling */
+.video-page {
+  background-color: #f8f9fc; /* Light royal white for the background */
+  color: #1a237e; /* Royal blue text color */
+  font-family: 'Poppins', sans-serif;
+  padding: 40px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0d47a1; /* Dark royal blue */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+}
+
+/* Real-Time Information */
+.real-time-info {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+/* Crime Reports Grid */
+.crime-reports {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual Crime Video Section */
+.crime-section {
+  background: linear-gradient(145deg, #ffffff, #e3f2fd); /* Light gradient for card effect */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(13, 71, 161, 0.2);
+  overflow: hidden;
+  padding: 20px;
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #0d47a1; /* Blue border */
+}
+
+.crime-section:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 10px 20px rgba(13, 71, 161, 0.3);
+}
+
+/* Video Container */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Video Player */
+.video-player {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #0d47a1;
+  box-shadow: 0 3px 8px rgba(13, 71, 161, 0.3);
+}
+
+/* Location and Timing Info */
+.location-timing {
+  background: #0d47a1; /* Royal blue background */
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* No Videos Message */
+.no-videos {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a237e;
+  margin-top: 20px;
+}
+  

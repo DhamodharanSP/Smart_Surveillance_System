@@ -1,0 +1,381 @@
+/* LiveAlerts.css
+
+/* General Styling */
+
+/* .criminal-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+} */
+
+/* Heading */
+/* .criminal-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d90429; 
+  margin-bottom: 20px;
+} */
+
+/* Error Message */
+/* .error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+} */
+
+/* Suspect Card */
+/* .criminal-record {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px auto;
+  max-width: 900px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.criminal-record:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+} */
+
+/* Left: Suspect Image */
+/* .criminal-photo-frame {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #d90429; 
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; 
+} */
+
+/* .criminal-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+} */
+
+/* Center: Suspect Information */
+/* .criminal-info {
+  text-align: left;
+  flex: 1;
+} */
+
+/* .criminal-info p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 5px 0;
+} */
+
+/* .criminal-info strong {
+  color: #d90429; 
+} 
+
+
+/* Right: Video Alert */
+/* .criminal-video {
+  width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+} */
+/* 
+.criminal-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+} */
+
+/* Loading Animation */
+/* .loading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d90429;
+  text-align: center;
+  margin-top: 20px;
+} */
+
+/* Responsive Design */
+/* @media screen and (max-width: 768px) {
+  .criminal-record {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  } */
+
+  /* .criminal-photo-frame {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .criminal-video {
+    width: 100%;
+  } */
+
+  /* .criminal-video video {
+    width: 100%;
+  }
+}  */
+
+
+
+/* LiveAlerts.css
+   Tailwind-like utility mapping + component styles
+   Paste/replace this file: src/assets/LiveAlerts.css
+*/
+
+/* ---------- Page container (mimic card) ---------- */
+.bg-white.rounded-lg.shadow-lg.p-6 {
+  max-width: 1100px;      /* keep content centered/limited */
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ---------- Common utility classes (used in JSX) ---------- */
+.flex { display: flex; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-between { justify-content: space-between; }
+.cursor-pointer { cursor: pointer; }
+.transition-all { transition: all .18s ease-in-out; }
+.transition-colors { transition: background-color .18s ease-in-out; }
+.mb-6 { margin-bottom: 24px; }
+.mb-8 { margin-bottom: 32px; }
+.p-4 { padding: 16px; }
+.p-2 { padding: 8px; }
+
+/* spacing helpers like Tailwind "space-x-4" behaviour */
+.space-x-1 > * + * { margin-left: 4px; }
+.space-x-2 > * + * { margin-left: 8px; }
+.space-x-4 > * + * { margin-left: 16px; }
+.space-y-4 > * + * { margin-top: 16px; }
+
+/* ---------- Text utilities ---------- */
+.text-lg { font-size: 18px; }
+.text-md { font-size: 16px; }
+.text-sm { font-size: 14px; }
+.text-xs { font-size: 12px; }
+.font-semibold { font-weight: 600; }
+.font-medium { font-weight: 500; }
+.text-gray-800 { color: #2d3748; }
+.text-gray-700 { color: #4a5568; }
+.text-gray-600 { color: #718096; }
+.text-gray-500 { color: #9aa3b2; }
+.text-red-600 { color: #e53e3e; }
+.text-blue-600 { color: #3182ce; }
+.text-green-600 { color: #2f855a; }
+
+/* ---------- Buttons ---------- */
+button {
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+}
+.flex.items-center.space-x-2 {
+  display: inline-flex;
+  align-items: center;
+}
+.bg-blue-600 { background: #3182ce; color: #fff; border-radius: 10px; padding: 8px 12px; }
+.bg-blue-600:hover { background: #2b6cb0; }
+.bg-green-600 { background: #2f855a; color: #fff; border-radius: 8px; padding: 6px; }
+.bg-gray-300 { background: #e2e8f0; }
+
+/* disabled opacity mimic */
+button:disabled { opacity: 0.55; cursor: default; }
+
+/* small icon spin */
+.animate-spin { animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* ---------- Card styles for each missing person ---------- */
+.border-l-4 { border-left-width: 4px; }
+.border-red-500 { border-left-color: #f56565; }
+.bg-red-50 { background: #fff5f5; }
+.p-4 { padding: 16px; }
+.rounded-r-lg {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.hover-shadow-md { transition: box-shadow .18s ease; }
+.hover-shadow-md:hover { box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
+.ring-2 { box-shadow: 0 0 0 3px rgba(254,178,178,0.35); }
+
+/* inside person card layout */
+.border-l-4 > .flex { gap: 16px; align-items: flex-start; }
+.w-16 { width: 64px; }
+.h-16 { height: 64px; }
+.bg-gray-300 { background: #e9eef6; }
+.rounded-lg { border-radius: 12px; }
+
+/* ensure thumbnail fits its container */
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.object-cover { object-fit: cover; }
+.flex-shrink-0 { flex-shrink: 0; }
+.min-w-0 { min-width: 0; }
+
+/* details column */
+.flex-1 { flex: 1 1 auto; }
+
+/* info grid inside person card */
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: 1fr; }
+@media (min-width: 720px) {
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+}
+.gap-2 { gap: 8px; }
+
+/* simple text truncation for long names/desc */
+.truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* small icon + text inline */
+.icon-row { display: inline-flex; align-items: center; gap: 6px; }
+
+/* alert GIF sizing (small card icon) */
+img[src$="Alert.gif"], .alert-gif {
+  width: 64px;           /* same as w-16 */
+  height: auto;
+  margin-left: 16px;
+  border-radius: 8px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ---------- Detected images grid ---------- */
+/* keep the grid responsive and thumbnails small */
+.grid.det-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (min-width: 720px) {
+  .grid.det-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1100px) {
+  .grid.det-grid { grid-template-columns: repeat(6, 1fr); }
+}
+
+/* thumbnail card */
+.bg-gray-100 { background: #f7fafc; border-radius: 10px; overflow: hidden; border: 2px solid transparent; }
+.group:hover .group-hover\:border-blue-500 { border-color: #3182ce; }
+
+/* detection thumbnail sizing (matches Tailwind h-24 = 6rem = 96px) */
+.h-24 { height: 96px; }
+.bg-gray-100 img { width: 100%; height: 96px; object-fit: cover; display: block; }
+
+/* info block under thumbnail */
+.p-2 { padding: 8px; }
+.text-xs { font-size: 12px; }
+
+/* action buttons that appear on hover */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.top-1 { top: 8px; }
+.right-1 { right: 8px; }
+.opacity-0 { opacity: 0; transition: opacity .18s; }
+.group:hover .opacity-0 { opacity: 1; }
+
+/* small icon buttons */
+button.small-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 6px; border: 0;
+}
+
+/* ---------- Empty state ---------- */
+.text-center { text-align: center; }
+.py-8 { padding-top: 32px; padding-bottom: 32px; }
+.text-gray-300 { color: #cbd5e1; }
+
+/* ---------- Modal ---------- */
+.fixed.inset-0 {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+}
+.bg-black.bg-opacity-75 {
+  background: rgba(0,0,0,0.75);
+}
+.z-50 { z-index: 9999; }
+.max-w-4xl { max-width: 1024px; width: 96%; margin: 12px auto; border-radius: 12px; overflow: hidden; background: #fff; }
+.max-h-full { max-height: 92vh; overflow: auto; }
+
+/* modal image: constrain size inside modal to avoid huge images */
+.max-w-full { max-width: 100%; }
+.h-auto { height: auto; }
+.modal-image {
+  display: block;
+  margin: 0 auto;
+  max-height: 72vh;      /* prevent overflow */
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ---------- Small utility widths/heights used in JSX that were missing ---------- */
+.w-4 { width: 16px; }
+.w-6 { width: 200px; }
+.h-4 { height: 16px; }
+.w-3 { width: 12px; }
+.h-3 { height: 12px; }
+.h-30 { height: 400px; }
+.w-20 { width: 140px; }
+
+/* ensure any image inside the main container doesn't overflow horizontally */
+.bg-white.rounded-lg.shadow-lg.p-6 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- Optional: adjust font and reduce spacing for better alignment ---------- */
+.bg-white.rounded-lg.shadow-lg.p-6 h3,
+.bg-white.rounded-lg.shadow-lg.p-6 h4 {
+  margin: 0 0 6px 0;
+  line-height: 1.1;
+}
+
+/* ---------- Footer spacing fix (in screenshot there was a long white gap) ---------- */
+.footer-fix {
+  margin-top: 24px;
+}
+
+/* ---------- If you still see an overly large image ----------
+   You can force a stricter height for any main displayed person image by uncommenting:
+
+.main-profile-image {
+  max-width: 680px;   / * adjust as desired * /
+  max-height: 360px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+   Then give the <img> element for the large display the "main-profile-image" class.
+*/
+
+.own {
+  margin-left: 180px;
+}

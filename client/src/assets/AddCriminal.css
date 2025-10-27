@@ -1,0 +1,115 @@
+/* General Styles */
+.add-criminal-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.criminal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #1e3a8a;
+  outline: none;
+}
+
+/* Form Row */
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Drag and Drop Upload */
+.drag-drop-container {
+  padding: 20px;
+  border: 2px dashed #1e3a8a;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  color: #1e3a8a;
+  font-weight: 500;
+}
+
+.image-preview {
+  margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Camera Styles */
+.camera-button, .capture-button {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.camera-button:hover, .capture-button:hover {
+  background: #133b7a;
+}
+
+.video-feed {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Submit Button */
+.submit-button {
+  background: #1e3a8a;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background: #133b7a;
+}
